@@ -3,6 +3,37 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -27,6 +58,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -270,6 +315,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.native.System.IO.Compression/4.1.0": {
@@ -2050,6 +2155,41 @@
           }
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -2066,6 +2206,37 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -2090,6 +2261,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -2281,6 +2466,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -4193,6 +4438,41 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4209,6 +4489,37 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4233,6 +4544,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -4425,6 +4750,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -6375,6 +6760,41 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -6391,6 +6811,37 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -6415,6 +6866,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -6610,6 +7075,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -8527,6 +9052,41 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8543,6 +9103,37 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -8567,6 +9158,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -8763,6 +9368,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -10718,6 +11383,41 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10734,6 +11434,37 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -10758,6 +11489,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -10953,6 +11698,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -12870,6 +13675,41 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12886,6 +13726,37 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Microsoft.Azure.Mobile.Client/3.1.0": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -12910,6 +13781,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.2": {
@@ -13106,6 +13991,66 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "modernhttpclient/2.4.2": {
+        "compile": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll": {}
+        }
+      },
+      "MvvmCross/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Binding": "[5.0.1]",
+          "MvvmCross.Core": "[5.0.1]"
+        }
+      },
+      "MvvmCross.Binding/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Core": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Binding.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Binding.dll": {},
+          "lib/uap10.0/MvvmCross.Localization.dll": {}
+        }
+      },
+      "MvvmCross.Core/5.0.1": {
+        "dependencies": {
+          "MvvmCross.Platform": "[5.0.1]"
+        },
+        "compile": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Core.dll": {},
+          "lib/uap10.0/MvvmCross.Uwp.dll": {}
+        }
+      },
+      "MvvmCross.Platform/5.0.1": {
+        "compile": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/MvvmCross.Platform.Uwp.dll": {},
+          "lib/uap10.0/MvvmCross.Platform.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -15061,6 +16006,41 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.MobileServices/1.3.2": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
+          "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
+      "Xam.Plugin.Geolocator/3.0.4": {
+        "compile": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.193": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -15078,6 +16058,147 @@
     }
   },
   "libraries": {
+    "Microsoft.Azure.Mobile.Client/3.1.0": {
+      "sha512": "L/RF/9A/mMFifQsTBRmSPV3UpvG11LR+0vsm7KKkOW7pLeRmsAWFtfKRUKoEfgdi2XoOFSLkXk88w8jVXV5uJA==",
+      "type": "package",
+      "files": [
+        "Microsoft.Azure.Mobile.Client.3.1.0.nupkg.sha512",
+        "Microsoft.Azure.Mobile.Client.nuspec",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.Ext.XML",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.pri",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/portable-win+net45+wp8+wpa81+monotouch+monoandroid/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/portable-win+net45+wp8+wpa81+monotouch+monoandroid/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.UI.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.UI.xml",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.xml"
+      ]
+    },
+    "Microsoft.Bcl/1.1.10": {
+      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.1.1.10.nupkg.sha512",
+        "Microsoft.Bcl.nuspec",
+        "lib/Xamarin.iOS10/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.21": {
+      "sha512": "sgHu4mIt0+NVGyI12Bj4hLPypNK55UOH+ologj2LqDCjxq3EbIxe/uAtHjY+fEwbE1dtsAHG8SXHf+V/EYbKTg==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.Build.1.0.21.nupkg.sha512",
+        "Microsoft.Bcl.Build.nuspec",
+        "build/Microsoft.Bcl.Build.Tasks.dll",
+        "build/Microsoft.Bcl.Build.targets"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -15132,6 +16253,72 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.29": {
+      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Net.Http.2.2.29.nupkg.sha512",
+        "Microsoft.Net.Http.nuspec",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml"
       ]
     },
     "Microsoft.NETCore/5.0.2": {
@@ -15367,6 +16554,219 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "modernhttpclient/2.4.2": {
+      "sha512": "Srkrjz2wBCh7af+AGqpPkJ3FSSFSruzg9mHVwwXiklf9gx2L1Ss2M+p2Mf4Fw17AOe6yPuJwdu4AAoslc6zP+w==",
+      "type": "package",
+      "files": [
+        "lib/ModernHttpClient-2.4.1.zip",
+        "lib/MonoAndroid/ModernHttpClient.dll",
+        "lib/MonoAndroid/ModernHttpClient.dll.mdb",
+        "lib/MonoAndroid/OkHttp.dll",
+        "lib/MonoTouch/ModernHttpClient.dll",
+        "lib/MonoTouch/ModernHttpClient.dll.mdb",
+        "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll",
+        "lib/Portable-Net45+WinRT45+WP8+WPA81/ModernHttpClient.dll.mdb",
+        "lib/Xamarin.iOS10/ModernHttpClient.dll",
+        "lib/Xamarin.iOS10/ModernHttpClient.dll.mdb",
+        "modernhttpclient.2.4.2.nupkg.sha512",
+        "modernhttpclient.nuspec"
+      ]
+    },
+    "MvvmCross/5.0.1": {
+      "sha512": "hREgqSfWvNfdTfr+DLuhh1bbeL+MvI6A8FFkV/VUclX5nQfG177ercWHDxeXG610BJrh99RysOJ4SdDtG+4GRw==",
+      "type": "package",
+      "files": [
+        "MvvmCross.5.0.1.nupkg.sha512",
+        "MvvmCross.nuspec"
+      ]
+    },
+    "MvvmCross.Binding/5.0.1": {
+      "sha512": "blFTvedC5BWtGJ4g2WbeBbRGP6xbTORY+c+N8c6Isv0YOPnxd6SPaPZZDvYTR58XwYjDlQdwGSxlOVRWnYELsw==",
+      "type": "package",
+      "files": [
+        "MvvmCross.Binding.5.0.1.nupkg.sha512",
+        "MvvmCross.Binding.nuspec",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.pdb.srcsrv",
+        "lib/MonoAndroid/MvvmCross.Binding.dll",
+        "lib/MonoAndroid/MvvmCross.Binding.pdb",
+        "lib/MonoAndroid/MvvmCross.Binding.pdb.srcsrv",
+        "lib/MonoAndroid/MvvmCross.Localization.dll",
+        "lib/MonoAndroid/MvvmCross.Localization.pdb",
+        "lib/MonoAndroid/MvvmCross.Localization.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Binding.dll",
+        "lib/dotnet/MvvmCross.Binding.pdb",
+        "lib/dotnet/MvvmCross.Binding.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Localization.dll",
+        "lib/dotnet/MvvmCross.Localization.pdb",
+        "lib/dotnet/MvvmCross.Localization.pdb.srcsrv",
+        "lib/net45/MvvmCross.Binding.Wpf.dll",
+        "lib/net45/MvvmCross.Binding.Wpf.pdb",
+        "lib/net45/MvvmCross.Binding.Wpf.pdb.srcsrv",
+        "lib/net45/MvvmCross.Binding.dll",
+        "lib/net45/MvvmCross.Binding.pdb",
+        "lib/net45/MvvmCross.Binding.pdb.srcsrv",
+        "lib/net45/MvvmCross.Localization.dll",
+        "lib/net45/MvvmCross.Localization.pdb",
+        "lib/net45/MvvmCross.Localization.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Binding.dll",
+        "lib/uap10.0/MvvmCross.Binding.pdb",
+        "lib/uap10.0/MvvmCross.Binding.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Localization.dll",
+        "lib/uap10.0/MvvmCross.Localization.pdb",
+        "lib/uap10.0/MvvmCross.Localization.pdb.srcsrv"
+      ]
+    },
+    "MvvmCross.Core/5.0.1": {
+      "sha512": "3JyQ3qWx9u5PTJ+Q3+6csMh4Nx8h7axHxVzOEO3qyR9TiavvJw0wFrQW3rm/m+DzJ660RR2NnOVHBPRsWFPiXQ==",
+      "type": "package",
+      "files": [
+        "MvvmCross.Core.5.0.1.nupkg.sha512",
+        "MvvmCross.Core.nuspec",
+        "lib/MonoAndroid/MvvmCross.Core.dll",
+        "lib/MonoAndroid/MvvmCross.Core.pdb",
+        "lib/MonoAndroid/MvvmCross.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Droid.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Core.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Core.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Core.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Core.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.iOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Core.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Core.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Core.dll",
+        "lib/dotnet/MvvmCross.Core.pdb",
+        "lib/net45/MvvmCross.Core.dll",
+        "lib/net45/MvvmCross.Core.pdb",
+        "lib/net45/MvvmCross.Wpf.dll",
+        "lib/net45/MvvmCross.Wpf.pdb",
+        "lib/net45/MvvmCross.Wpf.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.pdb",
+        "lib/uap10.0/MvvmCross.Core.dll",
+        "lib/uap10.0/MvvmCross.Core.pdb",
+        "lib/uap10.0/MvvmCross.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Uwp.pri"
+      ]
+    },
+    "MvvmCross.Platform/5.0.1": {
+      "sha512": "mAo6KA0hve6AYVbJoH9+mxVV1z+LFOig6xlOMF1W2MbcAWnVDmJRrcejJmUXd7VpQjfVYTNUh9AofpVyfB5P4A==",
+      "type": "package",
+      "files": [
+        "MvvmCross.Platform.5.0.1.nupkg.sha512",
+        "MvvmCross.Platform.nuspec",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.pdb.srcsrv",
+        "lib/MonoAndroid/MvvmCross.Platform.dll",
+        "lib/MonoAndroid/MvvmCross.Platform.pdb",
+        "lib/MonoAndroid/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.pdb.srcsrv",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.pdb.srcsrv",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Platform.dll",
+        "lib/dotnet/MvvmCross.Platform.pdb",
+        "lib/dotnet/MvvmCross.Platform.pdb.srcsrv",
+        "lib/net45/MvvmCross.Platform.Wpf.dll",
+        "lib/net45/MvvmCross.Platform.Wpf.pdb",
+        "lib/net45/MvvmCross.Platform.Wpf.pdb.srcsrv",
+        "lib/net45/MvvmCross.Platform.dll",
+        "lib/net45/MvvmCross.Platform.pdb",
+        "lib/net45/MvvmCross.Platform.pdb.srcsrv",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.dll",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Platform.dll",
+        "lib/uap10.0/MvvmCross.Platform.pdb",
+        "lib/uap10.0/MvvmCross.Platform.pdb.srcsrv"
+      ]
+    },
+    "Newtonsoft.Json/6.0.4": {
+      "sha512": "FyQLmEpjsCrEP+znauLDGAi+h6i9YnaMkITlfIoiM4RYyX3nki306bTHsr/0okiIvIc7BJhQTbOAIZVocccFUw==",
+      "type": "package",
+      "files": [
+        "Newtonsoft.Json.6.0.4.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "tools/install.ps1"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -21109,6 +22509,155 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "WindowsAzure.MobileServices/1.3.2": {
+      "sha512": "HAqJ6WFi731fTaG7U4tYnD3eb/ElH+ksdb41i4+5qJhxmC//UErKUalRSJ5rSRSkKcDPxEkz94pMNZwy9OKJAQ==",
+      "type": "package",
+      "files": [
+        "WindowsAzure.MobileServices.1.3.2.nupkg.sha512",
+        "WindowsAzure.MobileServices.nuspec",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/Xamarin.iOS10/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/monoandroid/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/monotouch/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.Ext.XML",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/net45/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.pri",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/netcore45/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/portable-win+net45+wp8+wpa81+monotouch+monoandroid/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/portable-win+net45+wp8+wpa81+monotouch+monoandroid/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.UI.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.UI.xml",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Mobile.xml",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.Ext.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.Ext.xml",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Mobile.xml"
+      ]
+    },
+    "Xam.Plugin.FilePicker/1.1.0": {
+      "sha512": "ORzNG6dEgdBZnIdmbQCpNB4LSSTjBebwGjb1XZrgfbBGjX9muHBfZeQwOnNRvcGlm6fkylzTj2rDslDA1E/JFA==",
+      "type": "package",
+      "files": [
+        "Xam.Plugin.FilePicker.1.1.0.nupkg.sha512",
+        "Xam.Plugin.FilePicker.nuspec",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.FilePicker.dll",
+        "lib/MonoAndroid10/Plugin.FilePicker.pdb",
+        "lib/MonoAndroid10/Plugin.FilePicker.xml",
+        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.FilePicker.dll",
+        "lib/MonoTouch10/Plugin.FilePicker.xml",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.dll",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.pdb",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.xml",
+        "lib/UAP10/Plugin.FilePicker.dll",
+        "lib/UAP10/Plugin.FilePicker.pdb",
+        "lib/UAP10/Plugin.FilePicker.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.xml",
+        "lib/win8/Plugin.FilePicker.Abstractions.dll",
+        "lib/win8/Plugin.FilePicker.Abstractions.pdb",
+        "lib/win8/Plugin.FilePicker.Abstractions.xml",
+        "lib/win8/Plugin.FilePicker.dll",
+        "lib/win8/Plugin.FilePicker.pdb",
+        "lib/win8/Plugin.FilePicker.xml",
+        "lib/wp8/Plugin.FilePicker.Abstractions.dll",
+        "lib/wp8/Plugin.FilePicker.Abstractions.pdb",
+        "lib/wp8/Plugin.FilePicker.Abstractions.xml",
+        "lib/wp8/Plugin.FilePicker.dll",
+        "lib/wp8/Plugin.FilePicker.pdb",
+        "lib/wp8/Plugin.FilePicker.xml",
+        "lib/wpa81/Plugin.FilePicker.Abstractions.dll",
+        "lib/wpa81/Plugin.FilePicker.Abstractions.pdb",
+        "lib/wpa81/Plugin.FilePicker.Abstractions.xml",
+        "lib/wpa81/Plugin.FilePicker.dll",
+        "lib/wpa81/Plugin.FilePicker.pdb",
+        "lib/wpa81/Plugin.FilePicker.xml",
+        "readme.txt"
+      ]
+    },
+    "Xam.Plugin.Geolocator/3.0.4": {
+      "sha512": "5UMAwRk+dk+Ar0Ei+Jd0H8G0a0tHsm9gJouCXMuGnvEFU2CzOJJKrNfH2QGi7eVfsd5/XHoJhhk6J0Pi38olXA==",
+      "type": "package",
+      "files": [
+        "Xam.Plugin.Geolocator.3.0.4.nupkg.sha512",
+        "Xam.Plugin.Geolocator.nuspec",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Geolocator.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.xml",
+        "lib/MonoTouch10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Geolocator.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Geolocator.dll",
+        "lib/MonoTouch10/Plugin.Geolocator.xml",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.xml",
+        "lib/UAP10/Plugin.Geolocator.dll",
+        "lib/UAP10/Plugin.Geolocator.pdb",
+        "lib/UAP10/Plugin.Geolocator.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.xml",
+        "lib/net45/Plugin.Geolocator.Abstractions.dll",
+        "lib/net45/Plugin.Geolocator.Abstractions.pdb",
+        "lib/net45/Plugin.Geolocator.Abstractions.xml",
+        "lib/net45/Plugin.Geolocator.dll",
+        "lib/net45/Plugin.Geolocator.pdb",
+        "lib/net45/Plugin.Geolocator.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.xml",
+        "lib/win8/Plugin.Geolocator.Abstractions.dll",
+        "lib/win8/Plugin.Geolocator.Abstractions.pdb",
+        "lib/win8/Plugin.Geolocator.Abstractions.xml",
+        "lib/win8/Plugin.Geolocator.dll",
+        "lib/win8/Plugin.Geolocator.pdb",
+        "lib/win8/Plugin.Geolocator.xml",
+        "lib/wp8/Plugin.Geolocator.Abstractions.dll",
+        "lib/wp8/Plugin.Geolocator.Abstractions.pdb",
+        "lib/wp8/Plugin.Geolocator.Abstractions.xml",
+        "lib/wp8/Plugin.Geolocator.dll",
+        "lib/wp8/Plugin.Geolocator.pdb",
+        "lib/wp8/Plugin.Geolocator.xml",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.dll",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.pdb",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.xml",
+        "lib/wpa81/Plugin.Geolocator.dll",
+        "lib/wpa81/Plugin.Geolocator.pdb",
+        "lib/wpa81/Plugin.Geolocator.xml",
+        "readme.txt"
+      ]
+    },
     "Xamarin.Forms/2.3.3.193": {
       "sha512": "RnZGA4K1MoN5qDKBvBd0BTkWcXQ42p4qCP6VYBoGD/PIlPMyLTUcRnfcPg+jPOjSy7mlNoCMZc+6KL38/wVE5g==",
       "type": "package",
@@ -21274,9 +22823,15 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Microsoft.Azure.Mobile.Client >= 3.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
+      "MvvmCross >= 5.0.1",
       "SQLite.Net-PCL >= 3.1.1",
-      "Xamarin.Forms >= 2.3.3.193"
+      "WindowsAzure.MobileServices >= 1.3.2",
+      "Xam.Plugin.FilePicker >= 1.1.0",
+      "Xam.Plugin.Geolocator >= 3.0.4",
+      "Xamarin.Forms >= 2.3.3.193",
+      "modernhttpclient >= 2.4.2"
     ],
     "UAP,Version=v10.0": []
   }
