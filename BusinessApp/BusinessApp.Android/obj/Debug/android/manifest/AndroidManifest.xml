@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="BusinessApp.Android">
   <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="15" />
+  <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:label="BusinessApp.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <application android:label="BusinessApp.Android" android:name="md5ba4bf0bc7b858f40cf50dcdaa3d3ceb0.MainApplication" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="LoginActivity" android:name="md5ba4bf0bc7b858f40cf50dcdaa3d3ceb0.LoginActivity" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="BusinessApp" android:theme="@style/MainTheme" android:name="md5ba4bf0bc7b858f40cf50dcdaa3d3ceb0.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="RegisterActivity" android:name="md5ba4bf0bc7b858f40cf50dcdaa3d3ceb0.RegisterActivity" />
+    <activity android:label="Web Authenticator" android:name="md588920fb9403ed228b036d6919cddd329.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md588920fb9403ed228b036d6919cddd329.WebAuthenticatorActivity" />
+    <activity android:configChanges="orientation|screenSize" android:name="md520c46725dc61fcf80ec8b8957aac5201.FilePickerActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="BusinessApp.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
@@ -21,4 +28,5 @@
       </intent-filter>
     </receiver>
   </application>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
 </manifest>

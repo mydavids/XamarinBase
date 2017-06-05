@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SQLite.Net.Attributes;
 namespace BusinessApp.Models
 {
    public class Model
