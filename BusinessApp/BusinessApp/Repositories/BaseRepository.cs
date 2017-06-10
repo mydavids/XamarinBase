@@ -21,7 +21,11 @@ namespace BusinessApp.Repositories
         
         public BaseRepository()
         {
-            conn = DependencyService.Get<ISQLite>().GetConnection();
+
+          
+
+
+             conn = DependencyService.Get<ISQLite>().GetConnection();
             conn.CreateTable<T>();
             //  conn.CreateTableAsync<T>().Wait();
             // conn.

@@ -243,15 +243,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddressActivity.cs" />
+    <Compile Include="AppointmentActivity.cs" />
+    <Compile Include="AppointmentDetailsActivity.cs" />
+    <Compile Include="CartActivity.cs" />
+    <Compile Include="ClientProfileActivity.cs" />
+    <Compile Include="DrawerListAdapter.cs" />
     <Compile Include="FileAccessHelper.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
+    <Compile Include="NotificationListActivity.cs" />
+    <Compile Include="PaymentActivity.cs" />
+    <Compile Include="ProductDetailActivity.cs" />
+    <Compile Include="ProductListActivity.cs" />
+    <Compile Include="QuoteDetailActivity.cs" />
+    <Compile Include="QuoteListActivity.cs" />
     <Compile Include="RegisterActivity.cs" />
+    <Compile Include="AccountActivity.cs" />
+    <Compile Include="BillActivity.cs" />
+    <Compile Include="Resources\layout\ClientListAdapter.cs" />
+    <Compile Include="Resources\layout\NotificationListAdapter.cs" />
+    <Compile Include="Resources\layout\OrderAdapter.cs" />
+    <Compile Include="Resources\layout\ProductListAdapter.cs" />
+    <Compile Include="Resources\layout\QuoteListAdapter.cs" />
+    <Compile Include="Resources\layout\UserListAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="SqliteService.cs" />
+    <Compile Include="StockListActivity.cs" />
+    <Compile Include="UserActivity.cs" />
+    <Compile Include="UserProfileActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -266,6 +289,72 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Account.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ClientProfile.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\UserProfile.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\UserList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ProductsList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\OrdersList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Payment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Address.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\QuotesList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ProductDetail.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Cart.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Bill.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NotificationList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StockList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\OrderDetail.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Appointment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AppointmentDetails.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\QuoteDetail.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ClientList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddOrder.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddQuote.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddProduct.axml">
+      <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +380,9 @@
       <Project>{b6bab1d9-2278-471d-9d91-5d3f1107da96}</Project>
       <Name>BusinessApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\BurgerMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

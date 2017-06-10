@@ -13,7 +13,19 @@ using System.Windows.Input;
 using SQLite.Net;
 namespace BusinessApp.ViewModels
 {
-    class CategoriesViewModel
+   public class CategoriesViewModel : MvxViewModel
     {
+        public CategoriesViewModel()
+        {
+
+        }
+
+        public ICommand NavBack
+        {
+            get
+            {
+                return new MvxCommand(() => Close(this));
+            }
+        }
     }
 }

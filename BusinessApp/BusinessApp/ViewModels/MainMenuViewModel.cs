@@ -15,6 +15,17 @@ namespace BusinessApp.ViewModels
 {
    public class MainMenuViewModel : MvxViewModel
     {
+        public MainMenuViewModel()
+        {
 
+        }
+
+        public ICommand NavBack
+        {
+            get
+            {
+                return new MvxCommand(() => Close(this));
+            }
+        }
     }
 }

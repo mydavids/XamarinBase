@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SQLite.Net.Attributes;
 namespace BusinessApp.Models
 {
-    public class Address:Model
+    public class Address: Model
     {
         [PrimaryKey, AutoIncrement]
         private long Id { get; set; }

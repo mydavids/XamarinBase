@@ -23,6 +23,7 @@ namespace BusinessApp
             // ShowViewModel is a core navigation mechanism in MvvmCross.
             // for now, just start the regular MainMenuViewModel view.
             ShowViewModel<MainViewModel>();
+            
         }
     }
 }

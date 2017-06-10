@@ -21,14 +21,15 @@ namespace BusinessApp
         public App()
         {
             // Whenever Mvx.Resolve is used, a new instance of Calculation is provided.
-          //  Mvx.RegisterType<IBillCalculator, BillCalculator>();
-         //   var calcExample = Mvx.Resolve<IBillCalculator>();
+            //  Mvx.RegisterType<IBillCalculator, BillCalculator>();
+            //   var calcExample = Mvx.Resolve<IBillCalculator>();
 
             // Tells the MvvmCross framework that whenever any code requests an IMvxAppStart reference,
             // the framework should return that same appStart instance.
+
             var appStart = new CustomAppStart();
             Mvx.RegisterSingleton<IMvxAppStart>(appStart);
-
+            
             // Another option is to utilize a default App Start object with 
             // var appStart = new MvxAppStart<TipViewModel>();
         }

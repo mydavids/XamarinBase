@@ -13,7 +13,24 @@ using System.Windows.Input;
 using SQLite.Net;
 namespace BusinessApp.ViewModels
 {
-    class AccountViewModel
+   public class AccountViewModel : MvxViewModel
     {
+        private readonly IAccountService _accountService;
+        public ICommand OrderCommand => new MvxCommand(() =>  ShowViewModel<OrdersViewModel>());
+        public ICommand QuoteCommand => new MvxCommand(() => ShowViewModel<QuotesViewModel>());
+        public ICommand EnqueriesCommand => new MvxCommand(() => ShowViewModel<EnqueriesViewModel>());
+        public AccountViewModel(IAccountService accountService)
+        {
+            _accountService = accountService;
+        }
+
+        public ICommand NavBack
+        {
+            get
+            {
+                return new MvxCommand(() => Close(this));
+            }
+        }
+
     }
 }
