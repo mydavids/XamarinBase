@@ -4,7 +4,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite;
 using SQLite.Net.Attributes;
+
 namespace BusinessApp.Models
 {
     public class Products : Model

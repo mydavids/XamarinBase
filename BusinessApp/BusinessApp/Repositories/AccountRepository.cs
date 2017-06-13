@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using BusinessApp.Contracts.Repositories;
 using BusinessApp.Contracts.Services;
 using BusinessApp.Models;
-using SQLite.Net;
+using SQLite;
 using Xamarin.Forms;
+using SQLite.Net;
 
 namespace BusinessApp.Repositories
 {

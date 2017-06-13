@@ -35,12 +35,12 @@ namespace BusinessApp.Droid
         public Setup(Context applicationContext) : base(applicationContext)
         {
         }
-
+       
         protected override IMvxApplication CreateApp()
         {
          
-            var dbConn = FileAccessHelper.GetLocalFilePath("BusinessApp.db3");
-            Mvx.RegisterSingleton(new SqliteService().GetConnection());
+            var dbConn = SQLite_Android.GetDatabasePath();
+            Mvx.RegisterSingleton(dbConn);
             return new App();
         }
     }

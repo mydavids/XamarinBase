@@ -8,14 +8,15 @@ using BusinessApp.Contracts.Repositories;
 using BusinessApp.Contracts.Services;
 using BusinessApp.Models;
 using SQLite;
-using SQLite.Net;
+
 using Xamarin.Forms;
+using SQLite.Net;
 
 namespace BusinessApp.Repositories
 {
    public class BaseRepository<T> : IRepository<T> where T : Model
     {
-        private readonly SQLiteConnection conn;
+         SQLiteConnection conn;
 
         public string StatusMessage { get; set; }
         
@@ -32,12 +33,16 @@ namespace BusinessApp.Repositories
         }
         public T Get(long id)
         {
-            return conn.Get<T>(Convert.ToInt64(id));
+            return conn.Get<T>(id);
+           
+         
         }
 
-        public IList<T> GetAllRecords(string query)
+        public IList<T> GetAllRecords(string query) 
         {
             return conn.Query<T>(query).ToList();
+            //var members = (from mem in conn.Query<T>(query,args) select mem);
+            //return members.ToList();
         }
        
 

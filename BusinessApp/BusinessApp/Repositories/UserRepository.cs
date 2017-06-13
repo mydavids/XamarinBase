@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 using BusinessApp.Contracts.Repositories;
 using BusinessApp.Contracts.Services;
 using BusinessApp.Models;
-using SQLite.Net;
+using SQLite;
 using Xamarin.Forms;
+using SQLite.Net;
 
 namespace BusinessApp.Repositories
 {
    public class UserRepository : BaseRepository<User>, IUserRepository
     {
-        private readonly SQLiteConnection conn;
+        SQLiteConnection conn;
         public UserRepository() : base()
        {
             conn = DependencyService.Get<ISQLite>().GetConnection();

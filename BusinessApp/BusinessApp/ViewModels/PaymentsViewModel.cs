@@ -10,7 +10,7 @@ using BusinessApp.Repositories;
 using BusinessApp.Services;
 using MvvmCross.Core.ViewModels;
 using System.Windows.Input;
-using SQLite.Net;
+using SQLite;
 namespace BusinessApp.ViewModels
 {
    public class PaymentsViewModel : MvxViewModel

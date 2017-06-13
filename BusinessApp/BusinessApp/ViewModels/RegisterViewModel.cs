@@ -11,11 +11,14 @@ using BusinessApp.Services;
 using MvvmCross.Core.ViewModels;
 using System.Windows.Input;
 using SQLite.Net;
+using Xamarin.Forms;
+using SQLite.Net;
+using BusinessApp.Contracts.Services;
 namespace BusinessApp.ViewModels
 {
    public class RegisterViewModel : MvxViewModel
     {
-        private readonly IUserService _userService;
+        public  IUserService _userService { get; } = DependencyService.Get<IUserService>();
         private string _email;
         public string Email
         {
@@ -46,9 +49,9 @@ namespace BusinessApp.ViewModels
             get { return _phoneNumber; }
             set { _phoneNumber = value; RaisePropertyChanged(() => PhoneNumber); }
         }
-        public RegisterViewModel(IUserService userService)
+        public RegisterViewModel()//IUserService userService)
         {
-            _userService = userService;
+          //  _userService = userService;
         }
 
 
@@ -64,6 +67,8 @@ namespace BusinessApp.ViewModels
                 newUser.Surname = Surname;
                 newUser.PhoneNumber = PhoneNumber;
                 _userService.Save(newUser);
+                Helpers.Settings.GeneralEmail = user.Email;
+                Helpers.Settings.GeneralLogin = "logged in";
                 ShowViewModel<MainMenuViewModel>();
               //  return true;
             }
