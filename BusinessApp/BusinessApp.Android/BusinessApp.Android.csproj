@@ -278,6 +278,9 @@
     <Compile Include="ClientProfileActivity.cs" />
     <Compile Include="DrawerListAdapter.cs" />
     <Compile Include="FileAccessHelper.cs" />
+    <Compile Include="Helpers\FilePickerActivity.cs" />
+    <Compile Include="Helpers\FilePickerImplementation.cs" />
+    <Compile Include="Helpers\IOUtil.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />

@@ -106,6 +106,10 @@
     <Compile Include="Enums\OrderStatus.cs" />
     <Compile Include="Enums\PaymentType.cs" />
     <Compile Include="Enums\UserType.cs" />
+    <Compile Include="Helpers\CrossFilePicker.cs" />
+    <Compile Include="Helpers\FileData.cs" />
+    <Compile Include="Helpers\FilePickerEventArgs.cs" />
+    <Compile Include="Helpers\IFilePicker.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Address.cs" />
